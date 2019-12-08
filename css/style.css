@@ -6,7 +6,10 @@
 }
 
 body {
-    background-color: #f1f1f1;
+    margin: 0;
+    background: url(../img/tienda2.jpg) no-repeat center;
+    background-size: cover;
+    
 }
 
 .container{
@@ -18,6 +21,12 @@ body {
     align-items: center;
 }
 
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
 .login-container {
     display: flex;
     width: 650px;
@@ -26,21 +35,29 @@ body {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
 }
 
-.register, .login {
+.login-container-2 {
+    display: flex;
+    width: 420px;
+    height:auto;
+    background: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.register,.register-2, .login {
     flex: 1;
 }
 
-.register{
+.register,.register-2{
     padding: 40px;
     position: relative;
 }
 
-.register h2{
+.register h2,.register-2 h2{
     color: #797979;
     margin-bottom: 30px;
 }
 
-.register input{
+.register input,.register-2 input{
     width: 100%;
     padding: 5px;
     font-size: 16px;
@@ -52,12 +69,12 @@ body {
     color: #333333;
 }
 
-.register input:active,
-.register input:focus{
+.register input:active,.register-2 input:active
+.register input:focus,.register-2 input:focus{
     outline: none;
 }
 
-.register .submit{
+.register .submit,.register-2 .submit{
     width: auto;
     padding: 10px;
     background: #f17108;
@@ -85,7 +102,8 @@ body {
 }
 
 .login{
-    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+    background:url(../img/Colores.jpg) no-repeat center;
+    background-size: cover;
     padding: 40px;
 }
 
@@ -128,11 +146,11 @@ body {
 }
 
 @media only screen and (max-width: 540px){
-    .login-container{
+    .login-container,.login-container-2{
         display: block;
     }
 
-    .register, .login{
+    .register,.register-2, .login{
     flex: none;
     }
 
